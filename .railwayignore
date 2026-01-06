@@ -1,0 +1,23 @@
+# Ignore build artifacts (very large)
+target/
+
+# Ignore local database
+db/*.db
+
+# Ignore local env files
+.env
+*.env
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore cargo lock if you want fresh deps
+# Cargo.lock
+
+# Ignore temp and output files
+*.txt
+*.log
+check_*.txt

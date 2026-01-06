@@ -1,0 +1,3974 @@
+﻿cargo :     Checking 
+getrandom v0.2.16
+At line:1 char:1
++ cargo check 2>&1 | 
+Out-File -FilePath 
+check_output3.txt 
+-Encoding UTF ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (    Che   
+ cking getrandom     
+v0.2.16:String)     
+[], RemoteExcept    
+ion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+    Checking 
+byteorder v1.5.0
+    Checking hyper 
+v0.14.32
+    Checking 
+rand_core v0.6.4
+    Checking ring 
+v0.17.14
+    Checking 
+password-hash v0.5.0
+    Checking argon2 
+v0.5.3
+    Checking 
+rustls-webpki 
+v0.103.8
+    Checking sct 
+v0.7.1
+    Checking 
+rustls-webpki 
+v0.101.7
+    Checking 
+jsonwebtoken v9.3.1
+    Checking rustls 
+v0.21.12
+    Checking rustls 
+v0.23.36
+    Checking 
+hyper-tls v0.5.0
+    Checking reqwest 
+v0.11.27
+    Checking 
+sqlx-core v0.7.4
+    Checking 
+tokio-rustls v0.26.4
+    Checking 
+tungstenite v0.27.0
+    Checking 
+hyper-rustls v0.27.7
+    Checking reqwest 
+v0.12.28
+    Checking 
+tokio-tungstenite 
+v0.27.0
+    Checking 
+sqlx-sqlite v0.7.4
+    Checking 
+reqwest-middleware 
+v0.4.2
+    Checking 
+shuttle-api-client 
+v0.57.0
+    Checking sqlx 
+v0.7.4
+    Checking 
+shuttle-runtime 
+v0.57.0
+    Checking 
+shuttle-warp v0.57.0
+    Checking 
+chat_app v0.1.0 (M:\p
+roject-bolt-github-px
+4d9ukp 
+(4)\project\chat_app)
+error[E0432]: 
+unresolved import 
+`warp::ws`
+   --> 
+src\main.rs:6:11
+    |
+6   | use 
+warp::ws::{Message, 
+WebSocket};
+    |           ^^ 
+could not find `ws` 
+in `warp`
+    |
+note: found an item 
+that was configured 
+out
+   --> C:\Users\MADDY
+\.cargo\registry\src\
+index.crates.io-1949c
+f8c6b5b557f\warp-0.4.
+2\src\lib.rs:120:24
+    |
+120 | pub use 
+self::filters::ws;
+    |                
+        ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+   --> C:\Users\MADDY
+\.cargo\registry\src\
+index.crates.io-1949c
+f8c6b5b557f\warp-0.4.
+2\src\lib.rs:118:7
+    |
+118 | #[cfg(feature 
+= "websocket")]
+    |       
+^^^^^^^^^^^^^^^^^^^^^
+note: found an item 
+that was configured 
+out
+   --> C:\Users\MADDY
+\.cargo\registry\src\
+index.crates.io-1949c
+f8c6b5b557f\warp-0.4.
+2\src\lib.rs:158:28
+    |
+158 | pub use self::f
+ilters::ws::ws;
+    |                
+            ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+   --> C:\Users\MADDY
+\.cargo\registry\src\
+index.crates.io-1949c
+f8c6b5b557f\warp-0.4.
+2\src\lib.rs:156:7
+    |
+156 | #[cfg(feature 
+= "websocket")]
+    |       
+^^^^^^^^^^^^^^^^^^^^^
+
+error[E0432]: 
+unresolved import `ar
+gon2::password_hash::
+rand_core::OsRng`
+  --> 
+src\main.rs:12:29
+   |
+12 | use argon2::pass
+word_hash::{rand_core
+::OsRng, SaltString};
+   |                 
+            
+^^^^^^^^^^^^^^^^ no 
+`OsRng` in the root
+   |
+note: found an item 
+that was configured 
+out
+  --> C:\Users\MADDY\
+.cargo\registry\src\i
+ndex.crates.io-1949cf
+8c6b5b557f\rand_core-
+0.6.4\src\lib.rs:49:4
+3
+   |
+49 | #[cfg(feature = 
+"getrandom")] pub 
+use os::OsRng;
+   |                 
+                     
+     ^^^^^
+note: the item is 
+gated behind the 
+`getrandom` feature
+  --> C:\Users\MADDY\
+.cargo\registry\src\i
+ndex.crates.io-1949cf
+8c6b5b557f\rand_core-
+0.6.4\src\lib.rs:49:7
+   |
+49 | #[cfg(feature = 
+"getrandom")] pub 
+use os::OsRng;
+   |       
+^^^^^^^^^^^^^^^^^^^^^
+
+error[E0432]: 
+unresolved import 
+`warp`
+ --> src\handlers\gro
+ups.rs:1:5
+  |
+1 | use warp::Filter;
+  |     ^^^^ help: a 
+similar path exists: 
+`crate::warp`
+  |
+  = note: `use` 
+statements changed 
+in Rust 2018; read 
+more at <https://doc.
+rust-lang.org/edition
+-guide/rust-2018/modu
+le-system/path-clarit
+y.html>
+
+error[E0432]: 
+unresolved import 
+`warp`
+ --> src\handlers\gro
+ups.rs:4:5
+  |
+4 | use warp::Reply;
+  |     ^^^^ help: a 
+similar path exists: 
+`crate::warp`
+  |
+  = note: `use` 
+statements changed 
+in Rust 2018; read 
+more at <https://doc.
+rust-lang.org/edition
+-guide/rust-2018/modu
+le-system/path-clarit
+y.html>
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:92:24
+   |
+92 |     let 
+delete_group = 
+warp::path!("groups" 
+/ "delete" / i64)
+   |                 
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:85:24
+   |
+85 |     let 
+update_group = 
+warp::path!("groups" 
+/ "update")
+   |                 
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:78:23
+   |
+78 |     let 
+leave_group = 
+warp::path!("groups" 
+/ "leave")
+   |                 
+      ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:71:22
+   |
+71 |     let 
+join_group = 
+warp::path!("groups" 
+/ "join")
+   |                 
+     ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:63:29
+   |
+63 |     let 
+join_group_simple = 
+warp::path!("groups" 
+/ "join-simple")
+   |                 
+            ^^^^ use 
+of unresolved module 
+or unlinked crate 
+`warp`
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:55:21
+   |
+55 |     let 
+test_join = 
+warp::path!("groups" 
+/ "test-join")
+   |                 
+    ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+
+error[E0433]: failed 
+to resolve: could 
+not find `ws` in 
+`warp`
+    --> 
+src\main.rs:1668:25
+     |
+1668 |         
+.map(|ws: 
+warp::ws::Ws, 
+params: 
+HashMap<String, 
+String>, users, tx, 
+pool| {
+     |               
+          ^^ could 
+not find `ws` in 
+`warp`
+     |
+note: found an item 
+that was configured 
+out
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:120:24
+     |
+120  | pub use 
+self::filters::ws;
+     |               
+         ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:118:7
+     |
+118  | #[cfg(feature 
+= "websocket")]
+     |       
+^^^^^^^^^^^^^^^^^^^^^
+note: found an item 
+that was configured 
+out
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:158:28
+     |
+158  | pub use self::
+filters::ws::ws;
+     |               
+             ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:156:7
+     |
+156  | #[cfg(feature 
+= "websocket")]
+     |       
+^^^^^^^^^^^^^^^^^^^^^
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:46:87
+   |
+46 | pub fn extended_
+routes(pool: 
+SqlitePool) -> impl 
+Filter<Extract = 
+impl Reply, Error = 
+warp::Rejection> + 
+Clone {
+   |                 
+                     
+                     
+                     
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:56:14
+   |
+56 |         
+.and(warp::post())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:59:13
+   |
+59 |             warp
+::reply::json(&serde_
+json::json!({"status"
+: "test_success"}))
+   |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+   |
+1  + use 
+crate::warp::reply;
+   |
+help: if you import 
+`reply`, refer to it 
+directly
+   |
+59 -             warp
+::reply::json(&serde_
+json::json!({"status"
+: "test_success"}))
+59 +             repl
+y::json(&serde_json::
+json!({"status": 
+"test_success"}))
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:64:14
+   |
+64 |         
+.and(warp::post())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:67:13
+   |
+67 |             warp
+::reply::json(&serde_
+json::json!({"status"
+: "simple_success"}))
+   |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+   |
+1  + use 
+crate::warp::reply;
+   |
+help: if you import 
+`reply`, refer to it 
+directly
+   |
+67 -             warp
+::reply::json(&serde_
+json::json!({"status"
+: "simple_success"}))
+67 +             repl
+y::json(&serde_json::
+json!({"status": 
+"simple_success"}))
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:72:14
+   |
+72 |         
+.and(warp::post())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:73:14
+   |
+73 |         .and(war
+p::body::json::<JoinL
+eaveGroupRequest>())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+   |
+1  + use 
+crate::warp::body;
+   |
+help: if you import 
+`body`, refer to it 
+directly
+   |
+73 -         .and(war
+p::body::json::<JoinL
+eaveGroupRequest>())
+73 +         .and(bod
+y::json::<JoinLeaveGr
+oupRequest>())
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:74:14
+   |
+74 |         .and(war
+p::header::<String>("
+authorization"))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:75:14
+   |
+75 |         .and(war
+p::any().map(move || 
+pool4.clone()))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:79:14
+   |
+79 |         
+.and(warp::post())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:80:14
+   |
+80 |         .and(war
+p::body::json::<JoinL
+eaveGroupRequest>())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+   |
+1  + use 
+crate::warp::body;
+   |
+help: if you import 
+`body`, refer to it 
+directly
+   |
+80 -         .and(war
+p::body::json::<JoinL
+eaveGroupRequest>())
+80 +         .and(bod
+y::json::<JoinLeaveGr
+oupRequest>())
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:81:14
+   |
+81 |         .and(war
+p::header::<String>("
+authorization"))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:82:14
+   |
+82 |         .and(war
+p::any().map(move || 
+pool5.clone()))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:86:14
+   |
+86 |         
+.and(warp::put())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:87:14
+   |
+87 |         .and(war
+p::body::json::<Updat
+eGroupRequest>())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+   |
+1  + use 
+crate::warp::body;
+   |
+help: if you import 
+`body`, refer to it 
+directly
+   |
+87 -         .and(war
+p::body::json::<Updat
+eGroupRequest>())
+87 +         .and(bod
+y::json::<UpdateGroup
+Request>())
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:88:14
+   |
+88 |         .and(war
+p::header::<String>("
+authorization"))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:89:14
+   |
+89 |         .and(war
+p::any().map(move || 
+pool2.clone()))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:93:14
+   |
+93 |         
+.and(warp::delete())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:94:14
+   |
+94 |         .and(war
+p::header::<String>("
+authorization"))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:95:14
+   |
+95 |         .and(war
+p::any().map(move || 
+pool3.clone()))
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:98:24
+   |
+98 |     let 
+create_group = 
+warp::path("groups")
+   |                 
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+  --> src\handlers\gr
+oups.rs:99:14
+   |
+99 |         
+.and(warp::post())
+   |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+   |
+   = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+   |
+1  + use crate::warp;
+   |
+1  + use 
+shuttle_warp::warp;
+   |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:100:14
+    |
+100 |         .and(wa
+rp::body::json::<Crea
+teGroupRequest>())
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::body;
+    |
+help: if you import 
+`body`, refer to it 
+directly
+    |
+100 -         .and(wa
+rp::body::json::<Crea
+teGroupRequest>())
+100 +         .and(bo
+dy::json::<CreateGrou
+pRequest>())
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:101:14
+    |
+101 |         .and(wa
+rp::header::<String>(
+"authorization"))
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:102:14
+    |
+102 |         .and(wa
+rp::any().map(move 
+|| pool1.clone()))
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:105:23
+    |
+105 |     let 
+list_groups = 
+warp::path("groups")
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:106:14
+    |
+106 |         
+.and(warp::get())
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:107:14
+    |
+107 |         .and(wa
+rp::header::<String>(
+"authorization"))
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:108:14
+    |
+108 |         .and(wa
+rp::any().map(move 
+|| pool6.clone()))
+    |              
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing one of 
+these crates
+    |
+1   + use 
+crate::warp;
+    |
+1   + use 
+shuttle_warp::warp;
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:145:23
+    |
+145 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+145 -             
+return Ok(warp::reply
+::with_status(
+145 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:146:17
+    |
+146 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+146 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+146 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:147:17
+    |
+147 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+147 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+147 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:193:8
+    |
+193 |     Ok(warp::re
+ply::with_status(
+    |        ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+193 -     Ok(warp::re
+ply::with_status(
+193 +     Ok(reply::w
+ith_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:194:9
+    |
+194 |         warp::r
+eply::json(&resp),
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+194 -         warp::r
+eply::json(&resp),
+194 +         
+reply::json(&resp),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:195:9
+    |
+195 |         warp::h
+ttp::StatusCode::CREA
+TED,
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+195 -         warp::h
+ttp::StatusCode::CREA
+TED,
+195 +         
+StatusCode::CREATED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:209:23
+    |
+209 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+209 -             
+return Ok(warp::reply
+::with_status(
+209 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:210:17
+    |
+210 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+210 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+210 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:211:17
+    |
+211 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+211 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+211 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:217:19
+    |
+217 |         return 
+Ok(warp::reply::with_
+status(
+    |                
+   ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+217 -         return 
+Ok(warp::reply::with_
+status(
+217 +         return 
+Ok(reply::with_status
+(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:218:13
+    |
+218 |             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Unauthorized to 
+join for another 
+user"})),
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+218 -             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Unauthorized to 
+join for another 
+user"})),
+218 +             rep
+ly::json(&serde_json:
+:json!({"error": 
+"Unauthorized to 
+join for another 
+user"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:219:13
+    |
+219 |             war
+p::http::StatusCode::
+FORBIDDEN,
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+219 -             war
+p::http::StatusCode::
+FORBIDDEN,
+219 +             Sta
+tusCode::FORBIDDEN,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:232:16
+    |
+232 |             Ok(
+warp::reply::with_sta
+tus(
+    |                
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+232 -             Ok(
+warp::reply::with_sta
+tus(
+232 +             Ok(
+reply::with_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:233:17
+    |
+233 |                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": 
+"already_member"})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+233 -                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": 
+"already_member"})),
+233 +                
+ reply::json(&serde_j
+son::json!({"status":
+ "already_member"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:234:17
+    |
+234 |                
+ warp::http::StatusCo
+de::OK,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+234 -                
+ warp::http::StatusCo
+de::OK,
+234 +                
+ StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:247:24
+    |
+247 |                
+     Ok(warp::reply::
+with_status(
+    |                
+        ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+247 -                
+     Ok(warp::reply::
+with_status(
+247 +                
+     Ok(reply::with_s
+tatus(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:248:25
+    |
+248 |                
+         warp::reply:
+:json(&serde_json::js
+on!({"status": 
+"joined"})),
+    |                
+         ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+248 -                
+         warp::reply:
+:json(&serde_json::js
+on!({"status": 
+"joined"})),
+248 +                
+         reply::json(
+&serde_json::json!({"
+status": "joined"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:249:25
+    |
+249 |                
+         warp::http::
+StatusCode::OK,
+    |                
+         ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+249 -                
+         warp::http::
+StatusCode::OK,
+249 +                
+         
+StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:254:24
+    |
+254 |                
+     Ok(warp::reply::
+with_status(
+    |                
+        ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+254 -                
+     Ok(warp::reply::
+with_status(
+254 +                
+     Ok(reply::with_s
+tatus(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:255:25
+    |
+255 |                
+         warp::reply:
+:json(&serde_json::js
+on!({"status": 
+"error", "message": 
+format!("{:?}", 
+e)})),
+    |                
+         ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+255 -                
+         warp::reply:
+:json(&serde_json::js
+on!({"status": 
+"error", "message": 
+format!("{:?}", 
+e)})),
+255 +                
+         reply::json(
+&serde_json::json!({"
+status": "error", 
+"message": 
+format!("{:?}", 
+e)})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:256:25
+    |
+256 |                
+         warp::http::
+StatusCode::INTERNAL_
+SERVER_ERROR,
+    |                
+         ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+256 -                
+         warp::http::
+StatusCode::INTERNAL_
+SERVER_ERROR,
+256 +                
+         StatusCode::
+INTERNAL_SERVER_ERROR
+,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:263:16
+    |
+263 |             Ok(
+warp::reply::with_sta
+tus(
+    |                
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+263 -             Ok(
+warp::reply::with_sta
+tus(
+263 +             Ok(
+reply::with_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:264:17
+    |
+264 |                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": "error", 
+"message": "Database 
+error"})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+264 -                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": "error", 
+"message": "Database 
+error"})),
+264 +                
+ reply::json(&serde_j
+son::json!({"status":
+ "error", "message": 
+"Database error"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:265:17
+    |
+265 |                
+ warp::http::StatusCo
+de::INTERNAL_SERVER_E
+RROR,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+265 -                
+ warp::http::StatusCo
+de::INTERNAL_SERVER_E
+RROR,
+265 +                
+ StatusCode::INTERNAL
+_SERVER_ERROR,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:281:23
+    |
+281 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+281 -             
+return Ok(warp::reply
+::with_status(
+281 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:282:17
+    |
+282 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+282 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+282 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:283:17
+    |
+283 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+283 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+283 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:295:19
+    |
+295 |         return 
+Ok(warp::reply::with_
+status(
+    |                
+   ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+295 -         return 
+Ok(warp::reply::with_
+status(
+295 +         return 
+Ok(reply::with_status
+(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:296:13
+    |
+296 |             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Not a member of 
+this group"})),
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+296 -             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Not a member of 
+this group"})),
+296 +             rep
+ly::json(&serde_json:
+:json!({"error": 
+"Not a member of 
+this group"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:297:13
+    |
+297 |             war
+p::http::StatusCode::
+FORBIDDEN,
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+297 -             war
+p::http::StatusCode::
+FORBIDDEN,
+297 +             Sta
+tusCode::FORBIDDEN,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:323:8
+    |
+323 |     Ok(warp::re
+ply::with_status(
+    |        ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+323 -     Ok(warp::re
+ply::with_status(
+323 +     Ok(reply::w
+ith_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:324:9
+    |
+324 |         warp::r
+eply::json(&serde_jso
+n::json!({"status": 
+"updated"})),
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+324 -         warp::r
+eply::json(&serde_jso
+n::json!({"status": 
+"updated"})),
+324 +         reply::
+json(&serde_json::jso
+n!({"status": 
+"updated"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:325:9
+    |
+325 |         warp::h
+ttp::StatusCode::OK,
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+325 -         warp::h
+ttp::StatusCode::OK,
+325 +         
+StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:339:23
+    |
+339 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+339 -             
+return Ok(warp::reply
+::with_status(
+339 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:340:17
+    |
+340 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+340 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+340 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:341:17
+    |
+341 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+341 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+341 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:353:19
+    |
+353 |         return 
+Ok(warp::reply::with_
+status(
+    |                
+   ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+353 -         return 
+Ok(warp::reply::with_
+status(
+353 +         return 
+Ok(reply::with_status
+(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:354:13
+    |
+354 |             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Not authorized to 
+delete this 
+group"})),
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+354 -             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Not authorized to 
+delete this 
+group"})),
+354 +             rep
+ly::json(&serde_json:
+:json!({"error": 
+"Not authorized to 
+delete this 
+group"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:355:13
+    |
+355 |             war
+p::http::StatusCode::
+FORBIDDEN,
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+355 -             war
+p::http::StatusCode::
+FORBIDDEN,
+355 +             Sta
+tusCode::FORBIDDEN,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:368:8
+    |
+368 |     Ok(warp::re
+ply::with_status(
+    |        ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+368 -     Ok(warp::re
+ply::with_status(
+368 +     Ok(reply::w
+ith_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:369:9
+    |
+369 |         warp::r
+eply::json(&serde_jso
+n::json!({"status": 
+"deleted"})),
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+369 -         warp::r
+eply::json(&serde_jso
+n::json!({"status": 
+"deleted"})),
+369 +         reply::
+json(&serde_json::jso
+n!({"status": 
+"deleted"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:370:9
+    |
+370 |         warp::h
+ttp::StatusCode::OK,
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+370 -         warp::h
+ttp::StatusCode::OK,
+370 +         
+StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:384:23
+    |
+384 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+384 -             
+return Ok(warp::reply
+::with_status(
+384 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:385:17
+    |
+385 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+385 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+385 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:386:17
+    |
+386 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+386 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+386 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:392:19
+    |
+392 |         return 
+Ok(warp::reply::with_
+status(
+    |                
+   ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+392 -         return 
+Ok(warp::reply::with_
+status(
+392 +         return 
+Ok(reply::with_status
+(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:393:13
+    |
+393 |             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Unauthorized to 
+leave for another 
+user"})),
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+393 -             war
+p::reply::json(&serde
+_json::json!({"error"
+: "Unauthorized to 
+leave for another 
+user"})),
+393 +             rep
+ly::json(&serde_json:
+:json!({"error": 
+"Unauthorized to 
+leave for another 
+user"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:394:13
+    |
+394 |             war
+p::http::StatusCode::
+FORBIDDEN,
+    |             
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+394 -             war
+p::http::StatusCode::
+FORBIDDEN,
+394 +             Sta
+tusCode::FORBIDDEN,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:408:20
+    |
+408 |                
+ Ok(warp::reply::with
+_status(
+    |                
+    ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+408 -                
+ Ok(warp::reply::with
+_status(
+408 +                
+ Ok(reply::with_statu
+s(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:409:21
+    |
+409 |                
+     warp::reply::jso
+n(&serde_json::json!(
+{"status": "left"})),
+    |                
+     ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+409 -                
+     warp::reply::jso
+n(&serde_json::json!(
+{"status": "left"})),
+409 +                
+     reply::json(&ser
+de_json::json!({"stat
+us": "left"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:410:21
+    |
+410 |                
+     warp::http::Stat
+usCode::OK,
+    |                
+     ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+410 -                
+     warp::http::Stat
+usCode::OK,
+410 +                
+     StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:414:20
+    |
+414 |                
+ Ok(warp::reply::with
+_status(
+    |                
+    ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+414 -                
+ Ok(warp::reply::with
+_status(
+414 +                
+ Ok(reply::with_statu
+s(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:415:21
+    |
+415 |                
+     warp::reply::jso
+n(&serde_json::json!(
+{"status": 
+"not_member"})),
+    |                
+     ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+415 -                
+     warp::reply::jso
+n(&serde_json::json!(
+{"status": 
+"not_member"})),
+415 +                
+     reply::json(&ser
+de_json::json!({"stat
+us": "not_member"})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:416:21
+    |
+416 |                
+     warp::http::Stat
+usCode::OK,
+    |                
+     ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+416 -                
+     warp::http::Stat
+usCode::OK,
+416 +                
+     StatusCode::OK,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:422:16
+    |
+422 |             Ok(
+warp::reply::with_sta
+tus(
+    |                
+^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+422 -             Ok(
+warp::reply::with_sta
+tus(
+422 +             Ok(
+reply::with_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:423:17
+    |
+423 |                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": "error", 
+"message": 
+format!("{:?}", 
+e)})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+423 -                
+ warp::reply::json(&s
+erde_json::json!({"st
+atus": "error", 
+"message": 
+format!("{:?}", 
+e)})),
+423 +                
+ reply::json(&serde_j
+son::json!({"status":
+ "error", "message": 
+format!("{:?}", 
+e)})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:424:17
+    |
+424 |                
+ warp::http::StatusCo
+de::INTERNAL_SERVER_E
+RROR,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+424 -                
+ warp::http::StatusCo
+de::INTERNAL_SERVER_E
+RROR,
+424 +                
+ StatusCode::INTERNAL
+_SERVER_ERROR,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:439:23
+    |
+439 |             
+return Ok(warp::reply
+::with_status(
+    |                
+       ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+439 -             
+return Ok(warp::reply
+::with_status(
+439 +             
+return Ok(reply::with
+_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:440:17
+    |
+440 |                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+440 -                
+ warp::reply::json(&s
+erde_json::json!({"er
+ror": error})),
+440 +                
+ reply::json(&serde_j
+son::json!({"error": 
+error})),
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:441:17
+    |
+441 |                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+    |                
+ ^^^^ use of 
+unresolved module or 
+unlinked crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+441 -                
+ warp::http::StatusCo
+de::UNAUTHORIZED,
+441 +                
+ StatusCode::UNAUTHOR
+IZED,
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:511:8
+    |
+511 |     Ok(warp::re
+ply::with_status(
+    |        ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+511 -     Ok(warp::re
+ply::with_status(
+511 +     Ok(reply::w
+ith_status(
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:512:9
+    |
+512 |         warp::r
+eply::json(&GroupsLis
+tResponse {
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this module
+    |
+1   + use 
+crate::warp::reply;
+    |
+help: if you import 
+`reply`, refer to it 
+directly
+    |
+512 -         warp::r
+eply::json(&GroupsLis
+tResponse {
+512 +         reply::
+json(&GroupsListRespo
+nse {
+    |
+
+error[E0433]: failed 
+to resolve: use of 
+unresolved module or 
+unlinked crate `warp`
+   --> src\handlers\g
+roups.rs:516:9
+    |
+516 |         warp::h
+ttp::StatusCode::OK,
+    |         ^^^^ 
+use of unresolved 
+module or unlinked 
+crate `warp`
+    |
+    = help: if you 
+wanted to use a 
+crate named `warp`, 
+use `cargo add warp` 
+to add it to your 
+`Cargo.toml`
+help: consider 
+importing this struct
+    |
+1   + use 
+reqwest::StatusCode;
+    |
+help: if you import 
+`StatusCode`, refer 
+to it directly
+    |
+516 -         warp::h
+ttp::StatusCode::OK,
+516 +         
+StatusCode::OK,
+    |
+
+error[E0425]: cannot 
+find function `ws` 
+in crate `warp`
+    --> 
+src\main.rs:1663:20
+     |
+1663 |         
+.and(warp::ws())
+     |               
+     ^^ not found in 
+`warp`
+     |
+note: found an item 
+that was configured 
+out
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:120:24
+     |
+120  | pub use 
+self::filters::ws;
+     |               
+         ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:118:7
+     |
+118  | #[cfg(feature 
+= "websocket")]
+     |       
+^^^^^^^^^^^^^^^^^^^^^
+note: found an item 
+that was configured 
+out
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:158:28
+     |
+158  | pub use self::
+filters::ws::ws;
+     |               
+             ^^
+note: the item is 
+gated behind the 
+`websocket` feature
+    --> C:\Users\MADD
+Y\.cargo\registry\src
+\index.crates.io-1949
+cf8c6b5b557f\warp-0.4
+.2\src\lib.rs:156:7
+     |
+156  | #[cfg(feature 
+= "websocket")]
+     |       
+^^^^^^^^^^^^^^^^^^^^^
+
+Some errors have 
+detailed 
+explanations: E0425, 
+E0432, E0433.
+For more information 
+about an error, try 
+`rustc --explain 
+E0425`.
+error: could not 
+compile `chat_app` 
+(bin "chat_app") due 
+to 104 previous 
+errors

@@ -1,0 +1,303 @@
+﻿cargo :     Updating 
+crates.io index
+At line:1 char:1
++ cargo check 2>&1 | 
+Out-File -FilePath 
+check_railway.txt 
+-Encoding UTF ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (    Upd   
+ ating crates.io     
+index:String) []    
+, RemoteExceptio    n
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+     Locking 7 
+packages to latest 
+compatible versions
+      Adding dotenv 
+v0.15.0
+ Downgrading headers 
+v0.4.1 -> v0.3.9
+ Downgrading 
+headers-core v0.3.0 
+-> v0.2.0
+      Adding multer 
+v2.1.0
+ Downgrading 
+tokio-tungstenite 
+v0.27.0 -> v0.21.0
+ Downgrading 
+tungstenite v0.27.0 
+-> v0.21.0
+ Downgrading warp 
+v0.4.2 -> v0.3.7 
+(available: v0.4.2)
+    Checking 
+smallvec v1.15.1
+   Compiling 
+getrandom v0.3.3
+    Checking log 
+v0.4.28
+    Checking 
+tracing-core v0.1.34
+    Checking 
+windows-sys v0.61.0
+   Compiling 
+thiserror v2.0.16
+    Checking dotenv 
+v0.15.0
+   Compiling ahash 
+v0.8.12
+   Compiling 
+tempfile v3.21.0
+    Checking multer 
+v2.1.0
+    Checking 
+parking_lot_core 
+v0.9.11
+    Checking 
+icu_normalizer v2.0.0
+   Compiling 
+hashbrown v0.14.5
+    Checking tracing 
+v0.1.41
+    Checking 
+parking_lot v0.12.4
+    Checking tokio 
+v1.47.1
+    Checking 
+futures-intrusive 
+v0.5.0
+    Checking 
+idna_adapter v1.2.1
+    Checking idna 
+v1.1.0
+    Checking 
+simple_asn1 v0.6.3
+    Checking 
+hashlink v0.8.4
+    Checking url 
+v2.5.7
+    Checking 
+jsonwebtoken v9.3.1
+   Compiling 
+sqlx-core v0.7.4
+    Checking 
+tungstenite v0.21.0
+   Compiling 
+sqlx-sqlite v0.7.4
+    Checking 
+schannel v0.1.28
+    Checking 
+native-tls v0.2.14
+    Checking 
+tokio-util v0.7.16
+    Checking 
+tokio-stream v0.1.17
+    Checking 
+tokio-tungstenite 
+v0.21.0
+    Checking 
+tokio-native-tls 
+v0.3.1
+    Checking h2 
+v0.3.27
+   Compiling 
+sqlx-macros-core 
+v0.7.4
+   Compiling 
+sqlx-macros v0.7.4
+    Checking sqlx 
+v0.7.4
+    Checking hyper 
+v0.14.32
+    Checking 
+hyper-tls v0.5.0
+    Checking warp 
+v0.3.7
+    Checking reqwest 
+v0.11.27
+    Checking 
+chat_app v0.1.0 (M:\p
+roject-bolt-github-px
+4d9ukp 
+(4)\project\chat_app)
+warning: use of 
+deprecated 
+associated function `
+chrono::DateTime::<Tz
+>::from_utc`: Use Tim
+eZone::from_utc_datet
+ime() or DateTime::fr
+om_naive_utc_and_offs
+et instead
+    --> 
+src\main.rs:2448:98
+     |
+2448 | ...   let 
+sched_iso = chrono::D
+ateTime::<chrono::Utc
+>::from_utc(chrono::N
+aiveDateTime::from_ti
+mestamp_opt(sched_epo
+ch, 
+0).unwrap_or_else(...
+     |               
+                     
+                    
+^^^^^^^^
+     |
+     = note: `#[warn(
+deprecated)]` on by 
+default
+
+warning: use of 
+deprecated 
+associated function `
+chrono::NaiveDateTime
+::from_timestamp_opt`
+: use `DateTime::from
+_timestamp` instead
+    --> 
+src\main.rs:2448:130
+     |
+2448 | ...   let 
+sched_iso = chrono::D
+ateTime::<chrono::Utc
+>::from_utc(chrono::N
+aiveDateTime::from_ti
+mestamp_opt(sched_epo
+ch, 
+0).unwrap_or_else(...
+     |               
+                     
+                     
+                     
+          
+^^^^^^^^^^^^^^^^^^
+
+warning: use of 
+deprecated 
+associated function `
+chrono::NaiveDateTime
+::from_timestamp_opt`
+: use `DateTime::from
+_timestamp` instead
+    --> 
+src\main.rs:2448:206
+     |
+2448 | 
+...(sched_epoch, 
+0).unwrap_or_else(|| 
+chrono::NaiveDateTime
+::from_timestamp_opt(
+chrono::Utc::now().ti
+mestamp()+60,0).unwra
+p()), chrono::U...
+     |               
+                     
+                     
+     
+^^^^^^^^^^^^^^^^^^
+
+warning: unused 
+variable: 
+`message_id`
+    --> 
+src\main.rs:2803:53
+     |
+2803 | ...           
+        let 
+message_id = 
+store_group_message(
+     |               
+            
+^^^^^^^^^^ help: if 
+this is intentional, 
+prefix it with an 
+underscore: 
+`_message_id`
+     |
+     = note: `#[warn(
+unused_variables)]` 
+on by default
+
+warning: function 
+`get_daily_range` is 
+never used
+    --> 
+src\main.rs:3885:4
+     |
+3885 | fn 
+get_daily_range() -> 
+(String, String) {
+     |    
+^^^^^^^^^^^^^^^
+     |
+     = note: 
+`#[warn(dead_code)]` 
+on by default
+
+warning: function 
+`get_weekly_range` 
+is never used
+    --> 
+src\main.rs:3892:4
+     |
+3892 | fn 
+get_weekly_range() 
+-> (String, String) {
+     |    
+^^^^^^^^^^^^^^^^
+
+warning: function `ge
+nerate_group_highligh
+t` is never used
+    --> 
+src\main.rs:4040:10
+     |
+4040 | async fn gener
+ate_group_highlight(
+     |          ^^^^^
+^^^^^^^^^^^^^^^^^^^
+
+warning: function `de
+bug_messages_handler`
+ is never used
+    --> 
+src\main.rs:4199:10
+     |
+4199 | async fn debug
+_messages_handler(
+     |          ^^^^^
+^^^^^^^^^^^^^^^^^
+
+warning: function 
+`store_reaction` is 
+never used
+    --> 
+src\main.rs:4712:10
+     |
+4712 | async fn 
+store_reaction(pool: 
+&SqlitePool, 
+message_id: i64, 
+username: &str, 
+emoji: &str) -> 
+Result<(), 
+sqlx::Error> {
+     |          
+^^^^^^^^^^^^^^
+
+warning: `chat_app` 
+(bin "chat_app") 
+generated 9 warnings
+    Finished `dev` 
+profile [unoptimized 
++ debuginfo] 
+target(s) in 34.43s

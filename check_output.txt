@@ -1,0 +1,1573 @@
+﻿cargo :     Checking 
+chat_app v0.1.0 (M:\p
+roject-bolt-github-px
+4d9ukp 
+(4)\project\chat_app)
+At line:1 char:1
++ cargo check 2>&1 | 
+Out-File -FilePath 
+check_output.txt 
+-Encoding UTF8
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (    Che   
+ cking ch...oject    
+\chat_app):Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+error: unknown start 
+of token: \
+    --> 
+src\main.rs:1739:14
+     |
+1739 |     
+println!(\"Chat App 
+initialized for 
+Shuttle 
+deployment\");
+     |              ^
+
+error: prefix 
+`token` is unknown
+    --> 
+src\main.rs:1756:48
+     |
+1756 |               
+      error: 
+"Invalid or expired 
+token".to_string(),
+     |               
+                     
+            ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1756 |               
+      error: 
+"Invalid or expired 
+token ".to_string(),
+     |               
+                     
+                 +
+
+error: prefix 
+`group` is unknown
+    --> 
+src\main.rs:1774:46
+     |
+1774 |               
+  error: "Not a 
+member of this 
+group".to_string(),
+     |               
+                     
+          ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1774 |               
+  error: "Not a 
+member of this group 
+".to_string(),
+     |               
+                     
+               +
+
+error: prefix `data` 
+is unknown
+    --> 
+src\main.rs:1784:38
+     |
+1784 |               
+  error: "Invalid 
+poll 
+data".to_string(),
+     |               
+                     
+  ^^^^ unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1784 |               
+  error: "Invalid 
+poll data 
+".to_string(),
+     |               
+                     
+      +
+
+error: prefix 
+`token` is unknown
+    --> 
+src\main.rs:1841:48
+     |
+1841 |               
+      error: 
+"Invalid or expired 
+token".to_string(),
+     |               
+                     
+            ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1841 |               
+      error: 
+"Invalid or expired 
+token ".to_string(),
+     |               
+                     
+                 +
+
+error: prefix 
+`found` is unknown
+    --> 
+src\main.rs:1860:38
+     |
+1860 |               
+      error: "Poll 
+not 
+found".to_string(),
+     |               
+                     
+  ^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1860 |               
+      error: "Poll 
+not found 
+".to_string(),
+     |               
+                     
+       +
+
+error: prefix 
+`active` is unknown
+    --> 
+src\main.rs:1874:37
+     |
+1874 |               
+  error: "Poll is 
+not 
+active".to_string(),
+     |               
+                     
+ ^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1874 |               
+  error: "Poll is 
+not active 
+".to_string(),
+     |               
+                     
+       +
+
+error: prefix 
+`group` is unknown
+    --> 
+src\main.rs:1891:46
+     |
+1891 |               
+  error: "Not a 
+member of this 
+group".to_string(),
+     |               
+                     
+          ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1891 |               
+  error: "Not a 
+member of this group 
+".to_string(),
+     |               
+                     
+               +
+
+error: prefix 
+`options` is unknown
+    --> 
+src\main.rs:1901:38
+     |
+1901 |               
+  error: "Invalid 
+vote 
+options".to_string(),
+     |               
+                     
+  ^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1901 |               
+  error: "Invalid 
+vote options 
+".to_string(),
+     |               
+                     
+         +
+
+error: prefix 
+`token` is unknown
+    --> 
+src\main.rs:1960:48
+     |
+1960 |               
+      error: 
+"Invalid or expired 
+token".to_string(),
+     |               
+                     
+            ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1960 |               
+      error: 
+"Invalid or expired 
+token ".to_string(),
+     |               
+                     
+                 +
+
+error: prefix 
+`option_order` is 
+unknown
+    --> 
+src\main.rs:1997:22
+     |
+1997 |          
+ORDER BY 
+po.option_order"
+     |               
+       ^^^^^^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+1997 |          
+ORDER BY 
+po.option_order "
+     |               
+                   +
+
+error: prefix 
+`characters` is 
+unknown
+    --> 
+src\main.rs:2051:78
+     |
+2051 |             
+error: "Username 
+cannot be empty and 
+password must be at 
+least 6 characters".t
+o_string(),
+     |               
+                     
+                     
+                     
+^^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2051 |             
+error: "Username 
+cannot be empty and 
+password must be at 
+least 6 characters 
+".to_string(),
+     |               
+                     
+                     
+                     
+          +
+
+error: prefix 
+`successfully` is 
+unknown
+    --> 
+src\main.rs:2077:43
+     |
+2077 |               
+  message: "User 
+registered successful
+ly".to_string(),
+     |               
+                     
+       ^^^^^^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2077 |               
+  message: "User 
+registered 
+successfully 
+".to_string(),
+     |               
+                     
+                   +
+
+error: prefix 
+`failed` is unknown
+    --> 
+src\main.rs:2085:92
+     |
+2085 |         Err(sq
+lx::Error::Database(d
+b_err)) if db_err.mes
+sage().contains("UNIQ
+UE constraint 
+failed") => {
+     |               
+                     
+                     
+                     
+              ^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2085 |         Err(sq
+lx::Error::Database(d
+b_err)) if db_err.mes
+sage().contains("UNIQ
+UE constraint failed 
+") => {
+     |               
+                     
+                     
+                     
+                    +
+
+error: prefix 
+`exists` is unknown
+    --> 
+src\main.rs:2087:42
+     |
+2087 |               
+  error: "Username 
+already 
+exists".to_string(),
+     |               
+                     
+      ^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2087 |               
+  error: "Username 
+already exists 
+".to_string(),
+     |               
+                     
+            +
+
+error: prefix 
+`error` is unknown
+    --> 
+src\main.rs:2096:41
+     |
+2096 |               
+  error: "Internal 
+server 
+error".to_string(),
+     |               
+                     
+     ^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2096 |               
+  error: "Internal 
+server error 
+".to_string(),
+     |               
+                     
+          +
+
+error: prefix 
+`timestamp` is 
+unknown
+    --> 
+src\main.rs:2130:36
+     |
+2130 |               
+      .expect("valid 
+timestamp")
+     |               
+                     
+^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2130 |               
+      .expect("valid 
+timestamp ")
+     |               
+                     
+         +
+
+error: prefix 
+`successful` is 
+unknown
+    --> 
+src\main.rs:2146:37
+     |
+2146 |               
+      message: 
+"Login successful".to
+_string(),
+     |               
+                     
+ ^^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2146 |               
+      message: 
+"Login successful 
+".to_string(),
+     |               
+                     
+           +
+
+error: prefix 
+`credentials` is 
+unknown
+    --> 
+src\main.rs:2156:37
+     |
+2156 |               
+      error: 
+"Invalid credentials"
+.to_string(),
+     |               
+                     
+ ^^^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2156 |               
+      error: 
+"Invalid credentials 
+".to_string(),
+     |               
+                     
+            +
+
+error: prefix 
+`credentials` is 
+unknown
+    --> 
+src\main.rs:2166:33
+     |
+2166 |               
+  error: "Invalid cre
+dentials".to_string()
+,
+     |               
+                  
+^^^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2166 |               
+  error: "Invalid 
+credentials 
+".to_string(),
+     |               
+                     
+        +
+
+error: prefix 
+`header` is unknown
+    --> 
+src\main.rs:2186:47
+     |
+2186 |               
+  error: "Invalid 
+authorization 
+header".to_string(),
+     |               
+                     
+           ^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2186 |               
+  error: "Invalid 
+authorization header 
+".to_string(),
+     |               
+                     
+                 +
+
+error: prefix 
+`token` is unknown
+    --> 
+src\main.rs:2213:48
+     |
+2213 |               
+      error: 
+"Invalid or expired 
+token".to_string(),
+     |               
+                     
+            ^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2213 |               
+      error: 
+"Invalid or expired 
+token ".to_string(),
+     |               
+                     
+                 +
+
+error: prefix 
+`username` is unknown
+    --> 
+src\main.rs:2221:85
+     |
+2221 |     let rows 
+= 
+sqlx::query("SELECT 
+username FROM users 
+WHERE username != ? 
+ORDER BY username")
+     |               
+                     
+                     
+                     
+       ^^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2221 |     let rows 
+= 
+sqlx::query("SELECT 
+username FROM users 
+WHERE username != ? 
+ORDER BY username ")
+     |               
+                     
+                     
+                     
+               +
+
+error: unknown start 
+of token: \
+    --> 
+src\main.rs:2263:131
+     |
+2263 | ...   "SELECT 
+id, sender_username, 
+receiver_username, 
+message, timestamp, 
+group_id, deleted, 
+edited_at, reveal_at 
+FROM messages \n     
+  ...
+     |               
+                     
+                     
+                     
+                     
+                     
+         ^
+
+error: unknown start 
+of token: \
+    --> 
+src\main.rs:2263:226
+     |
+2263 | ...name = ? 
+COLLATE NOCASE AND 
+receiver_username = 
+? COLLATE NOCASE) \n 
+           OR 
+(sender_username = ? 
+COLLATE NOCASE AND 
+receiver_us...
+     |               
+                     
+                     
+             ^
+
+error: unknown start 
+of token: \
+    --> 
+src\main.rs:2263:321
+     |
+2263 | ...name = ? 
+COLLATE NOCASE AND 
+receiver_username = 
+? COLLATE NOCASE) \n 
+        ORDER BY id 
+DESC LIMIT ?"
+     |               
+                     
+                     
+             ^
+
+error: prefix 
+`sender` is unknown
+    --> 
+src\main.rs:2291:75
+     |
+2291 |         let 
+mut msg_text: String 
+= if deleted == 1 { 
+"Message recalled by 
+sender".to_string() 
+} else { 
+row.get("message") };
+     |               
+                     
+                     
+                  
+^^^^^^ unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2291 |         let 
+mut msg_text: String 
+= if deleted == 1 { 
+"Message recalled by 
+sender ".to_string() 
+} else { 
+row.get("message") };
+     |               
+                     
+                     
+                     
+   +
+
+error: prefix 
+`group_id` is unknown
+    --> 
+src\main.rs:2436:83
+     |
+2436 | ...           
+        "error": 
+"Missing receiver or 
+group_id"
+     |               
+                     
+                 
+^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2436 |               
+                     
+                 
+"error": "Missing 
+receiver or group_id 
+"
+     |               
+                     
+                     
+                     
+             +
+
+error: prefix 
+`message` is unknown
+    --> 
+src\main.rs:2543:82
+     |
+2543 | ...           
+        
+println!("DEBUG: 
+Processing private 
+chat message");
+     |               
+                     
+                     
+       ^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2543 |               
+                     
+     
+println!("DEBUG: 
+Processing private 
+chat message ");
+     |               
+                     
+                     
+                     
+           +
+
+error: prefix 
+`broadcast` is 
+unknown
+    --> 
+src\main.rs:2573:87
+     |
+2573 | ...           
+        
+println!("DEBUG: 
+Sent private message 
+via broadcast");
+     |               
+                     
+                     
+        ^^^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2573 |               
+                     
+         
+println!("DEBUG: 
+Sent private message 
+via broadcast ");
+     |               
+                     
+                     
+                     
+                  +
+
+error: prefix 
+`request` is unknown
+    --> 
+src\main.rs:2578:81
+     |
+2578 | ...           
+        
+println!("DEBUG: 
+Received group 
+message request");
+     |               
+                     
+                     
+      ^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2578 |               
+                     
+     
+println!("DEBUG: 
+Received group 
+message request ");
+     |               
+                     
+                     
+                     
+          +
+
+error: prefix 
+`channel` is unknown
+    --> 
+src\main.rs:2610:98
+     |
+2610 | ...           
+        
+println!("DEBUG: 
+Sending group 
+message via 
+broadcast channel");
+     |               
+                     
+                     
+                   
+^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2610 |               
+                     
+         
+println!("DEBUG: 
+Sending group 
+message via 
+broadcast channel ");
+     |               
+                     
+                     
+                     
+                     
+      +
+
+error: prefix 
+`request` is unknown
+    --> 
+src\main.rs:2613:107
+     |
+2613 | ...           
+        
+println!("DEBUG: 
+Missing group_id or 
+message in 
+group_message 
+request");
+     |               
+                     
+                     
+                     
+       ^^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2613 |               
+                     
+         
+println!("DEBUG: 
+Missing group_id or 
+message in 
+group_message 
+request ");
+     |               
+                     
+                     
+                     
+                     
+               +
+
+error: prefix 
+`group` is unknown
+    --> 
+src\main.rs:2618:75
+     |
+2618 | ...           
+        
+println!("DEBUG: 
+Creating poll in 
+group");
+     |               
+                     
+                     
+^^^^^ unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2618 |               
+                     
+     
+println!("DEBUG: 
+Creating poll in 
+group ");
+     |               
+                     
+                     
+                     
+  +
+
+error: prefix 
+`validated` is 
+unknown
+    --> 
+src\main.rs:2626:81
+     |
+2626 | ...           
+        
+println!("DEBUG: 
+Poll creation data 
+validated");
+     |               
+                     
+                     
+  ^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2626 |               
+                     
+         
+println!("DEBUG: 
+Poll creation data 
+validated ");
+     |               
+                     
+                     
+                     
+            +
+
+error: prefix 
+`group` is unknown
+    --> 
+src\main.rs:2641:80
+     |
+2641 | ...           
+        
+println!("DEBUG: 
+User is member of 
+group");
+     |               
+                     
+                     
+ ^^^^^ unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2641 |               
+                     
+         
+println!("DEBUG: 
+User is member of 
+group ");
+     |               
+                     
+                     
+                     
+       +
+
+error: character 
+literal may only 
+contain one codepoint
+    --> 
+src\main.rs:2644:96
+     |
+2644 | ...           
+        
+println!("DEBUG: 
+Invalid poll data - 
+question: '{}', 
+options count: {}", 
+question, 
+options.len());
+     |               
+                     
+                     
+             ^^^^
+     |
+help: if you meant 
+to write a string 
+literal, use double 
+quotes
+     |
+2644 -               
+                     
+             
+println!("DEBUG: 
+Invalid poll data - 
+question: '{}', 
+options count: {}", 
+question, 
+options.len());
+2644 +               
+                     
+             
+println!("DEBUG: 
+Invalid poll data - 
+question: "{}", 
+options count: {}", 
+question, 
+options.len());
+     |
+
+error: prefix 
+`valid` is unknown
+    --> 
+src\main.rs:2648:75
+     |
+2648 | ...           
+        
+println!("DEBUG: 
+Poll data is valid");
+     |               
+                     
+                 
+^^^^^ unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2648 |               
+                     
+         
+println!("DEBUG: 
+Poll data is valid 
+");
+     |               
+                     
+                     
+                     
+  +
+
+error: prefix 
+`successfully` is 
+unknown
+    --> 
+src\main.rs:2718:114
+     |
+2718 | ...           
+        Ok(_) => 
+println!("DEBUG: 
+Poll message 
+broadcast 
+successfully"),
+     |               
+                     
+                     
+               
+^^^^^^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2718 |               
+                     
+                     
+        Ok(_) => 
+println!("DEBUG: 
+Poll message 
+broadcast 
+successfully "),
+     |               
+                     
+                     
+                     
+                     
+                     
+      +
+
+error: prefix `data` 
+is unknown
+    --> 
+src\main.rs:2728:84
+     |
+2728 | ...           
+        
+println!("DEBUG: 
+Missing required 
+poll data");
+     |               
+                     
+                     
+     ^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2728 |               
+                     
+         
+println!("DEBUG: 
+Missing required 
+poll data ");
+     |               
+                     
+                     
+                     
+          +
+
+error: prefix `poll` 
+is unknown
+    --> 
+src\main.rs:2733:68
+     |
+2733 | ...           
+        
+println!("DEBUG: 
+Voting on poll");
+     |               
+                     
+              ^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2733 |               
+                     
+     
+println!("DEBUG: 
+Voting on poll ");
+     |               
+                     
+                     
+               +
+
+error: prefix 
+`voting` is unknown
+    --> 
+src\main.rs:2757:99
+     |
+2757 | ...           
+        
+println!("DEBUG: 
+User not member of 
+group for voting");
+     |               
+                     
+                     
+            ^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2757 |               
+                     
+                 
+println!("DEBUG: 
+User not member of 
+group for voting ");
+     |               
+                     
+                     
+                     
+                     
+      +
+
+error: prefix 
+`active` is unknown
+    --> 
+src\main.rs:2762:79
+     |
+2762 | ...           
+        
+println!("DEBUG: 
+Poll not active");
+     |               
+                     
+             ^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2762 |               
+                     
+                 
+println!("DEBUG: 
+Poll not active ");
+     |               
+                     
+                     
+                     
+       +
+
+error: prefix 
+`options` is unknown
+    --> 
+src\main.rs:2767:83
+     |
+2767 | ...           
+        
+println!("DEBUG: 
+Invalid vote 
+options");
+     |               
+                     
+                 
+^^^^^^^ unknown 
+prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2767 |               
+                     
+                 
+println!("DEBUG: 
+Invalid vote options 
+");
+     |               
+                     
+                     
+                     
+            +
+
+error: prefix 
+`update` is unknown
+    --> 
+src\main.rs:2803:94
+     |
+2803 | ...           
+        
+println!("DEBUG: 
+Vote recorded, 
+broadcasting 
+update");
+     |               
+                     
+                     
+           ^^^^^^ 
+unknown prefix
+     |
+     = note: 
+prefixed identifiers 
+and literals are 
+reserved since Rust 
+2021
+help: consider 
+inserting whitespace 
+here
+     |
+2803 |               
+                     
+             
+println!("DEBUG: 
+Vote recorded, 
+broadcasting update 
+");
+     |               
+                     
+                     
+                     
+                     
+ +
+
+error: unknown start 
+of token: \
+    --> 
+src\main.rs:2806:110
+     |
+2806 | ...           
+        let 
+vote_message_text = 
+format!("≡ƒôè Poll 
+updated: {} voted on 
+\"{}\"", 
+username_clone, 
+question);
+     |               
+                     
+                     
+                     
+       ^
+
+error: unexpected 
+closing delimiter: 
+`}`
+    --> 
+src\main.rs:2831:41
+     |
+1081 |     async fn i
+nitialize_games(pool:
+ &SqlitePool) {
+     |               
+                     
+              - this 
+delimiter might not 
+be properly closed...
+1082 |     create_gam
+e_tables(pool).await;
+1083 | }
+     | - ...as it 
+matches this but it 
+has different 
+indentation
+...
+2831 |               
+                     
+     }
+     |               
+                     
+     ^ unexpected 
+closing delimiter
+
+error: could not 
+compile `chat_app` 
+(bin "chat_app") due 
+to 47 previous errors
