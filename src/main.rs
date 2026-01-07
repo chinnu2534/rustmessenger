@@ -860,6 +860,38 @@ async fn main() {
         .await
         .expect("Failed to connect to database");
 
+    // Create users table first (required for auth)
+    let _ = sqlx::query(
+        "CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT NOT NULL UNIQUE,
+            password_hash TEXT NOT NULL,
+            created_at TEXT DEFAULT CURRENT_TIMESTAMP
+        )"
+    ).execute(&pool).await;
+
+    // Create groups table (needed by other tables with foreign keys)
+    let _ = sqlx::query(
+        "CREATE TABLE IF NOT EXISTS groups (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            owner_username TEXT NOT NULL,
+            created_at TEXT NOT NULL
+        )"
+    ).execute(&pool).await;
+
+    // Create group_members table
+    let _ = sqlx::query(
+        "CREATE TABLE IF NOT EXISTS group_members (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            group_id INTEGER NOT NULL,
+            username TEXT NOT NULL,
+            joined_at TEXT NOT NULL,
+            UNIQUE(group_id, username),
+            FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE
+        )"
+    ).execute(&pool).await;
+
     // Scheduled messages table
     let _ = sqlx::query(
         "CREATE TABLE IF NOT EXISTS scheduled_messages (
