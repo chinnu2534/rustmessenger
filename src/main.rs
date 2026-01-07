@@ -876,9 +876,15 @@ async fn main() {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
             owner_username TEXT NOT NULL,
-            created_at TEXT NOT NULL
+            description TEXT,
+            ghost_mode INTEGER DEFAULT 0,
+            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
         )"
     ).execute(&pool).await;
+    
+    // Add columns if they don't exist (for existing databases)
+    let _ = sqlx::query("ALTER TABLE groups ADD COLUMN description TEXT").execute(&pool).await;
+    let _ = sqlx::query("ALTER TABLE groups ADD COLUMN ghost_mode INTEGER DEFAULT 0").execute(&pool).await;
 
     // Create group_members table
     let _ = sqlx::query(
@@ -886,7 +892,7 @@ async fn main() {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             group_id INTEGER NOT NULL,
             username TEXT NOT NULL,
-            joined_at TEXT NOT NULL,
+            joined_at TEXT DEFAULT CURRENT_TIMESTAMP,
             UNIQUE(group_id, username),
             FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE
         )"
